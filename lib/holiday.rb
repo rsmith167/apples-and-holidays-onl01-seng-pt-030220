@@ -77,6 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
         i = 0
         while i < day.length
         day[i].capitalize!
+        i+=1
       end
       day.join
       puts "  #{day}: #{decos.join(", ")}"
