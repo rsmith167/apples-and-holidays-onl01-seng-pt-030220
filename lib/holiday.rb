@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       binding.pry
       if day.include?(" ")
-        day.split
+        day = day.split
         i = 0
         while i < day.length
         day[i].capitalize!
