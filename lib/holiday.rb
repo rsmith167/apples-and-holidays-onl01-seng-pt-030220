@@ -103,6 +103,7 @@ holiday_hash.each do |season, holiday|
     if value == "BBQ"
       return_array << day
     end
+    end
   end
 end
 return_array
