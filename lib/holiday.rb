@@ -99,6 +99,7 @@ def all_holidays_with_bbq(holiday_hash)
   return_array
 holiday_hash.each do |season, holiday|
   season.each do |day, decos|
+    binding.pry
     if decos == "BBQ"
       return_array << day
     end
