@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
         i+=1
       end
     
-      puts "  #{day.join}: #{decos.join(", ")}"
+      puts "  #{day.join(" ")}: #{decos.join(", ")}"
     else
       puts "  #{day.capitalize!}: #{decos.join(", ")}"
     end
