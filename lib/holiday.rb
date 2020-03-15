@@ -99,8 +99,8 @@ def all_holidays_with_bbq(holiday_hash)
   return_array = []
 holiday_hash.each do |season, holiday|
   holiday.each do |day, decos|
-    
-    if decos == "BBQ"
+    decos.each do |value|
+    if value == "BBQ"
       return_array << day
     end
   end
