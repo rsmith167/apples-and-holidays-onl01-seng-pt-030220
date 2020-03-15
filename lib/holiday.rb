@@ -72,6 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
        if day.include?("_")
         day[day.index("_")] = " "
       end
+      binding.pry
       if day.include?(" ")
         day.split
         i = 0
