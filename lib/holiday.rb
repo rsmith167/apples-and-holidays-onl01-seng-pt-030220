@@ -72,7 +72,6 @@ def all_supplies_in_holidays(holiday_hash)
        if day.include?("_")
         day[day.index("_")] = " "
       end
-      binding.pry
       if day.include?(" ")
         day.split
         i = 0
@@ -80,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
         day[i].capitalize!
         i+=1
       end
-    end
+    
       puts "  #{day}: #{decos.join(", ")}"
     else
       puts "  #{day.capitalize!}: #{decos.join(", ")}"
